@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: micro-568283627415-dev
+  AWS_PROFILE: default
+  AWS_REGION: us-west-2
+  JWT_SECRET: microservices
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: cdr.cyskz2mrknyz.us-west-2.rds.amazonaws.com
+  URL: http://ab9b5cbc692d0419f8674f89dd844bd5-1548646494.us-west-2.elb.amazonaws.com:8100
+metadata:
+  name: env-config
+  

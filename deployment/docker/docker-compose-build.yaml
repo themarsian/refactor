@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: themarsian/u-reverseproxy:latest
+  backend_user:
+    build:
+      context: ../../api-user
+    image: themarsian/u-user:latest
+  backend_feed:
+    build:
+      context: ../../api-feed
+    image: themarsian/u-feed:latest
+  frontend:
+    build:
+      context: ../../frontend
+    image: themarsian/u-frontend:latest
